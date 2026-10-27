@@ -32,6 +32,7 @@ const devSitemap = (): Plugin => ({
 });
 
 export default defineConfig(({ mode, isSsrBuild }) => ({
+       base: mode === 'production' ? '/Neuron-Mapping/' : '/',
   server: {
     host: "localhost",
     port: 8080,
